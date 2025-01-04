@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" type="text/css" href="Calcss/cal.css" >
+</head>
+<body>
+    <table class="calculator">
+        <tr>
+            <td colspan="3"><input class="display-box" type="text" id="result" disabled/></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="1" class="number-button" id="one" onclick="display(1)" /></td>
+            <td><input type="button" value="2"  class="number-button" id="two" onclick="display(2)" /></td>
+            <td><input type="button" value="3"  class="number-button" id="three" onclick="display(3)" /></td>
+            <td><input type="button" value="+" class="operation-button" id="plus" onclick="display('+')"/></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="4"  class="number-button" id="four" onclick="display(4)" /></td>
+            <td><input type="button" value="5"  class="number-button" id="five" onclick="display(5)" /></td>
+            <td><input type="button" value="6"  class="number-button" id="six" onclick="display(6)" /></td>
+            <td><input type="button" value="-" class="operation-button" id="minus" onclick="display('-')" /></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="7"  class="number-button" id="seven" onclick="display(7)" /></td>
+            <td><input type="button" value="8"  class="number-button" id="eight" onclick="display(8)" /></td>
+            <td><input type="button" value="9"  class="number-button" id="nine" onclick="display(9)" /></td>
+            <td><input type="button" value="/" class="operation-button" id="division"onclick="display('/')"/></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="." class="number-button" id="poin" onclick="display('.')" /></td>
+            <td><input type="button" value="0"  class="number-button" id="zero" onclick="display(0)" /></td>
+            <td><input type="button" value="!" id="fac" onclick="fac()" /></td>
+            <td><input type="button" value="*" class="operation-button" id="multiplication" onclick="display('*')" /></td>
+
+        </tr>
+        <tr>
+            <td><input type="button" value="C" id="clear" onclick="Clear()"/></td>
+            <td><input type="button" value="CE" id="CE" onclick="ClearEntry()" /></td>
+           <span><td colspan="4"><input type="button" value="=" id="equal" onclick="equal()"  /></td></span> 
+            
+
+        </tr>
+       
+    </table>
+    
+    <script type="text/javascript" src="cal.js"></script>
+</body>
+</html>
